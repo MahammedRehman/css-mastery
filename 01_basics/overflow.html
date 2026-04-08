@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow-101</title>
+</head>
+<style>
+    .box{
+        border: 4px solid yellowgreen;
+        width: 50vw;
+        height: 10vh;
+        /* overflow: scroll; */
+        /* overflow: auto; /*Automatically add scroll whenever there is an overflow*/
+        /* white-space: nowrap; arrage the text horizontally */ 
+        /* text-overflow: ellipsis; Add three dots at the end of the sentence */
+        /* overflow: hidden; Cut off the overflowed part */
+        overflow-x: auto; /* same as hidden but only apply's on content that is on x axis*/
+        overflow-y: scroll; /* same as hidden but only apply's on content that is on y axis*/
+        overflow: auto scroll; /* first one is x and second one is y */
+
+        padding: 10px;
+    }
+</style>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non culpa doloribus quis a ducimus distinctio explicabo cum corrupti ipsam eos amet cumque quas facere libero aliquid consequatur, natus obcaecati! Distinctio, dicta? Consectetur velit odit at amet nemo quisquam, voluptates illo quasi sint necessitatibus fugit omnis atque autem optio! Voluptates, dolorum?
+    </div>
+</body>
+</html>
