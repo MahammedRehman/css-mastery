@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Simple Cards</title>
+</head>
+<style>
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: aquamarine;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .card {
+        position: relative;
+        height: 420px;
+        width: 300px;
+        background-color: white;
+        border-radius: 24px;
+        box-shadow: rgba(64, 64, 70, 0.2) 0px 7px 29px 0px;
+    }
+
+    /* .upper-half{
+        height: 150px;
+        background-color: blue;
+        border-radius: 24px 24px 0 0;
+    } */
+    .upper-img {
+        height: 150px;
+        width: 300px;
+        border-radius: 24px 24px 0 0;
+    }
+
+    .women-pic {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        position: absolute;
+        top: 145px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 3px solid white;
+    }
+
+    .info {
+        /* position: relative; */
+        text-align: center;
+        margin-top: 44px;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .name {
+        /* font-size: larger; */
+        font-weight: 600;
+        opacity: 80%;
+        margin-bottom: 6px;
+        /* position: absolute;
+        top: 12px;
+        left: 50%;
+        transform: translate(-50%);  */
+
+    }
+
+    .location {
+        font-size: 12px;
+        font-weight: 500;
+        opacity: 50%;
+        margin-bottom: 6px;
+        /* position: absolute;
+        top: 48px;
+        left: 50%;
+        transform: translate(-50%); */
+    }
+
+    .occupation {
+        font-size: 18px;
+        font-weight: 500;
+        opacity: 50%;
+        /* position: absolute;
+        top: 63px;
+        left: 50%;
+        transform: translate(-50%); */
+    }
+
+    /* .about{
+        font-size: 14px;
+        font-weight: 500;
+        opacity: 50%;
+        position: absolute;
+        top: 270px;
+        left: 19%;
+    } */
+    .about {
+        font-size: 14px;
+        font-weight: 400;
+        opacity: 70%;
+        color: #777;
+        text-align: center;
+        line-height: 1.2;
+        max-width: 270px;
+        margin: 14px auto;
+    }
+    .social-links{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        gap: 32px;
+        margin-top: 24px;
+    }
+    .icon{
+        text-decoration: none;
+        width: 26px;
+        height: 26px;
+        padding: 8px;
+        background: rgb(209, 209, 255);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .icon i{
+        color: white;
+        font-size: 24px;
+    }
+    .icon:hover{
+        transition: 0.4s ease;
+        transform: translateY(-2px);
+        background: rgb(117, 117, 248);
+    }
+   
+</style>
+
+<body>
+    <div class="card">
+        <div class="upper-half">
+            <img class="upper-img " src="/Assets/NightSky.avif" alt="NightSky">
+        </div>
+        <div class="profile-pic">
+            <img class="women-pic" src="/Assets/AnotherWomen.jpg" alt="">
+        </div>
+        <div class="info">
+            <p class="name">Jane S.Done</p>
+            <p class="location">New York, USA</p>
+            <p class="occupation">UX-UI Designer</p>
+            <p class="about">
+                Designing simple and intuitive user experiences that make everyday interactions effortless.
+            </p>
+        </div>
+        <div class="social-links">
+            <a href="" target="_blank" class="icon">
+                <i class="fab fa-instagram"></i></a>
+            <a href="" target="_blank" class="icon">
+                <i class="fab fa-twitter"></i></a>
+            <a href="" target="_blank" class="icon">
+                <i class="fab fa-facebook"></i></a>
+        </div>
+    </div>
+</body>
+
+</html>
