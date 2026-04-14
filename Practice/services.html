@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Services Section</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(206, 230, 251);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .section {
+        height: 500px;
+        width: 950px;
+        background: white;
+        /* border-radius: 12px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .text {
+        height: 450px;
+        width: 360px;
+        /* background-color: aqua; */
+        border-radius: 12px 0 0 12px;
+        position: relative;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .badge {
+        font-size: 12px;
+        padding: 4px 8px;
+        border: 2px solid grey;
+        border-radius: 36px;
+        opacity: 40%;
+        height: 20px;
+        width: 72px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        margin-left: 32px;
+        margin-top: 48px;
+        margin-bottom: 18px;
+    }
+
+    .title {
+        font-size: 25px;
+        margin-left: 32px;
+        font-weight: 400;
+        line-height: 30px;
+        margin-bottom: 14px;
+    }
+
+    .description {
+        margin-left: 32px;
+        font-size: 14px;
+        line-height: 18px;
+        width: 310px;
+        font-weight: 400;
+        color: rgb(157, 156, 156)
+    }
+
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        border: 2px solid transparent;
+        padding: 10px 16px;
+        border-radius: 36px;
+        background-color: rgb(115, 100, 213);
+        color: white;
+        position: absolute;
+        left: 32px;
+        top: 360px;
+    }
+    button:hover{
+        border: 2px solid rgb(115, 100, 213);
+        background-color: white;
+        color: rgb(115, 100, 213);
+        transition: 0.4s ease;
+        cursor: pointer;
+    }
+
+    .cards {
+        height: 450px;
+        width: 540px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* background-color: bisque; */
+        border-radius: 0 12px 12px 0;
+        display: grid;
+        /* justify-items: center;
+        align-items: center; */
+        /* position: relative; */
+        /* text-align: left; */
+    }
+
+    .card1 {
+        height: 180px;
+        width: 220px;
+        background-color: rgb(115, 100, 213);
+        align-content: center;
+        border-radius: 12px;
+        justify-self: end;
+        align-self: end;
+        text-align: left;
+        color: white;
+    }
+    .card1:hover{
+        transform: translateY(-2px);
+        transition: 0.4s ease;
+    }
+    .card2 {
+        height: 180px;
+        width: 220px;
+        background-color: rgb(247, 247, 252);
+        align-content: center;
+        border-radius: 12px;
+        margin-left: 18px;
+        justify-self: start;
+        align-self: end;
+    }
+     .card2:hover{
+        transform: translateY(-2px);
+        transition: 0.4s ease;
+    }
+
+    .card3 {
+        height: 180px;
+        width: 220px;
+        /* background-color: rgb(240, 238, 254); */
+        background-color: rgb(247, 247, 252);
+        align-content: center;
+        border-radius: 12px;
+        justify-self: end;
+        align-self: start;
+        margin-top: 18px;
+    }
+     .card3:hover{
+        transform: translateY(-2px);
+        transition: 0.4s ease;
+    }
+
+    .card4 {
+        height: 180px;
+        width: 220px;
+        /* background-color: rgb(240, 238, 254); */
+        background-color: rgb(247, 247, 252);
+        align-content: center;
+        border-radius: 12px;
+        margin-left: 18px;
+        justify-self: start;
+        align-self: start;
+        margin-top: 18px;
+    }
+     .card4:hover{
+        transform: translateY(-2px);
+        transition: 0.4s ease;
+    }
+    .card1-icon{
+        height: 36px;
+        width: 36px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 16px;
+        margin-bottom: 24px;
+    }
+    .card1-title{
+        font-size: 14px;
+        margin-left: 16px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        color: rgb(224, 224, 224);
+    }
+    .card1-description{
+        font-size: 12px;
+        margin-left: 16px;
+        width: 220px;
+        color: rgba(255, 255, 255, 0.623);
+        line-height: 18px;
+    }
+    .card-icon{
+        height: 36px;
+        width: 36px;
+        border-radius: 50%;
+        background-color: rgb(115, 100, 213);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 16px;
+        margin-bottom: 24px;
+    }
+    .card-title{
+        font-size: 16px;
+        margin-left: 16px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        color: rgb(78, 78, 78);
+    }
+    .card-description{
+        font-size: 12px;
+        margin-left: 16px;
+        width: 220px;
+        color: rgb(157, 156, 156);
+        line-height: 18px;
+    }
+    .card-icon i{
+        font-size: 16px;
+        color: white;
+    }
+    .card1-icon i{
+        font-size: 16px;
+    }
+
+</style>
+
+<body>
+    <div class="section">
+        <div class="text">
+            <p class="badge">SERVICES</p>
+            <p class="title">Explore our comprehensive service offerings</p>
+            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam quasi quo similique
+                repellendus magni est.</p>
+            <button>Get Started <i class="fa-solid fa-angle-right"></i></button>
+        </div>
+        <div class="cards">
+            <div class="card card1">
+                <div class="card1-icon"><i class="fa-solid fa-bullseye"></i></div>
+                <p class="card1-title">Strategy Development</p>
+                <p class="card1-description">Lorem ipsum dolor sit amet conset adipisicing elit.</p>
+            </div>
+            <div class="card card2">
+                <div class="card-icon"><i class="fa-solid fa-briefcase"></i></div>
+                <p class="card-title">Financial Consulting</p>
+                <p class="card-description">Lorem ipsum dolor sit amet conset adipisicing elit.</p>
+            </div>
+            <div class="card card3">
+                <div class="card-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <p class="card-title">Technology Solutions</p>
+                <p class="card-description">Lorem ipsum dolor sit amet conset adipisicing elit.</p>
+            </div>
+            <div class="card card4">
+                <div class="card-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                <p class="card-title">Risk Management</p>
+                <p class="card-description">Lorem ipsum dolor sit amet conset adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
