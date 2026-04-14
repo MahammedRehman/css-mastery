@@ -19,7 +19,7 @@
         position: absolute;
     }
     .box{
-      height: 121px;
+      height: 500px;
       width: 80vw;
       /* border: 2px solid grey; */
       margin: 12px;
@@ -27,25 +27,40 @@
       
     }
     .box1{
+        height: 100px;
         background: aqua;
+        position: sticky;
+        top: 12px;
     }
     .box2{
         background: aquamarine;
-        position: absolute;
+        /* position: absolute; */
         top: 72px;
         left: 32px;
         z-index: 2;
     }
     .box3{
         background: antiquewhite;
-        position: relative;
+        /* position: relative; */
         /* top: 12px; */
         right: 44px;
-        z-index: 1;
+        /* z-index: 1; */
     }
     .box4{
-        background: aliceblue;
+        height: 100px;
+        background: rgb(0, 0, 0);
+        /* position: fixed;
+        bottom: 0;
+        left:25vw; */
     }
+
+    /* Note: It doesn't matter that parent need to always be positioned as relative, is can be also fixed,stickey or absolute
+     the child will palce itself relative to it's parent no matter the position type but parent must be positioned */
+
+    /* Note2: Another thing is that transform, filter and perspective properties can also make an element appear as positioned
+    which means that by using that porperties inside a parent element act as a position property, so that child will position itself relative 
+    to it's parent when the parent uses this properties other than positionS */
+
 </style>
 <body>
     <div class="parent">
