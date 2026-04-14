@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day - Position</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        /* box-sizing: border-box; */
+    }
+    .parent{
+        border: 3px solid coral;
+        border-radius: 12px;
+        margin: 24px;
+        padding: 12px;
+        position: absolute;
+    }
+    .box{
+      height: 500px;
+      width: 80vw;
+      /* border: 2px solid grey; */
+      margin: 12px;
+      padding: 3px;
+      
+    }
+    .box1{
+        height: 100px;
+        background: aqua;
+        position: sticky;
+        top: 12px;
+    }
+    .box2{
+        background: aquamarine;
+        /* position: absolute; */
+        top: 72px;
+        left: 32px;
+        z-index: 2;
+    }
+    .box3{
+        background: antiquewhite;
+        /* position: relative; */
+        /* top: 12px; */
+        right: 44px;
+        /* z-index: 1; */
+    }
+    .box4{
+        height: 100px;
+        background: rgb(0, 0, 0);
+        /* position: fixed;
+        bottom: 0;
+        left:25vw; */
+    }
+
+    /* Note: It doesn't matter that parent need to always be positioned as relative, is can be also fixed,stickey or absolute
+     the child will palce itself relative to it's parent no matter the position type but parent must be positioned */
+
+    /* Note2: Another thing is that transform, filter and perspective properties can also make an element appear as positioned
+    which means that by using that porperties inside a parent element act as a position property, so that child will position itself relative 
+    to it's parent when the parent uses this properties other than positionS */
+
+</style>
+<body>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+</html>
