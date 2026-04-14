@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varibles-101</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    /* Global variables */
+    :root{
+        --primary-color:rgb(236, 125, 238);
+        --secondary-color:rgb(164, 223, 69);
+        --brand:rgba(250, 88, 88, 0.4);
+        --text-primary-color:white;
+        --defbor-color:plum;
+        --small:4px;
+        --medium:8px;
+        --large:12px;
+        --xlarge:16px;
+        --opc:0.5;
+    }
+    ul{
+        display: flex;
+    }
+    ul li{
+        list-style: none;
+        padding: 25px;
+        /* background-color:aquamarine; */
+        background-color: var(--primary-color);
+    }
+    ul li:first-child{
+        color: var(--text-primary-color) ;
+    }
+    ul li:nth-child(3){
+        background-color: var(--secondary-color) ;
+        color: var(--text-primary-color);
+    }
+    .container{
+        background-color: aqua;
+        padding: var(--large);
+    }
+    .box{
+        display: inline-block;
+        --secondary-color:rgb(69, 146, 223);  /* Local variable */
+        background-color: var(--secondary-color);
+        padding: var(--xlarge);
+        border-radius: var(--medium);
+        margin-left: var(--medium);
+    }
+
+    /* Note: If you know you going to use certain color or value at multiple areas it is better to decalre that color or values inside :root{} so that you can use that variable everywhere.
+
+    Note2: The best thing about variables is that they allow you to store specific values (like colors, font sizes, or spacing) in one place and reuse them throughout your stylesheet .
+    
+    Note3: You can declare a variable inside a selector to make it local variable and they are only accessible within the selector where they are defined and its child elements. */
+
+</style>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus voluptatibus deleniti architecto laudantium, perferendis, odit suscipit mollitia iste excepturi velit facilis cum, vitae veniam error!</div>
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, repudiandae!</div>
+</body>
+</html>
