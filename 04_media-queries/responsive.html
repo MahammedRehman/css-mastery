@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive-101</title>
+</head>
+<style>
+    .box {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boxes {
+        height: 120px;
+        width: 120px;
+        background-color: aquamarine;
+        border: 2px solid peru;
+    }
+
+    @media only screen and (orientation: landscape) {
+        .box{
+            border: 5px solid slateblue;
+        }
+    }
+
+    /* Note: Landscape means your screen width > height */
+    /* Note: Portrait means your screen width < height */
+
+
+    /* This is desktop first design cause your are first writing styles for pc version then using media to adjust to mobile versions */
+    @media only screen and (max-width:455px) {
+        body {
+            background-color: plum;
+        }
+
+        .box {
+            /* display: flex; */
+            flex-direction: column;
+        }
+    }
+</style>
+
+<body>
+    <div class="box">
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+    </div>
+</body>
+
+</html>
