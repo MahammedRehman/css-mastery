@@ -13,6 +13,15 @@
         padding: 0;
     }
 
+    body{
+        box-sizing: border-box;
+    }
+
+    /* Another form of universal selector */
+    .boxes *{
+        color: black;
+    }
+
     /* Class Seletor */
     .boxes{
         border: 5px solid seagreen;
@@ -32,14 +41,62 @@
     }
 
 
+    .box{
+        padding: 5px;
+    }
+
+
     .box:nth-child(2) .text{
         color: darkslateblue;
         /* background-color: brown; */
         padding: 5px;
-        background-color: blue;
+        background-color:chocolate;
         color: white;
         /* display: inline-block; */
     }
+
+    .box2 p::first-line{
+        color: yellow;
+        font-style: italic;
+    }
+
+
+
+
+    /* Decendent Selector  -> Style p wherever you find inside the 
+    box3 container */
+    .box3 p{
+        color: aquamarine;
+        background-color: black;
+        padding: 5px;
+    }
+
+    .box > button{
+        padding: 10px;
+    }
+
+
+
+    .box:nth-last-child(1){
+        background-color: blue;
+        color: white;
+    }
+
+
+    button::before{
+        color: aquamarine;
+        margin: 5px;
+        
+    }
+    button:hover::after{
+        content: ">";
+        color: aquamarine;
+        margin: 5px;
+        transition: 0.5s;
+    }
+
+
+    
 
 
 
@@ -53,13 +110,15 @@
             <img src="/Assets/NightSky.avif" alt="night-sky" width="300px">
         </div>
         <div class="box box2">
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, pariatur.</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem consequatur vero corrupti earum ex quas minus, tenetur perferendis, ipsam sapiente ab rerum nisi, tempore hic corporis animi consectetur nulla porro ullam odio facilis iure iusto. In quidem alias deserunt a!</p>
             <button>More</button>
             <button>Submit</button>
         </div>
-        <div class="box box3"></div>
-        <div id="text"></div>
-        
+        <div class="box box3">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, quasi!</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box box4">I am box</div>
     </div>
 </body>
-</html>
+</html> 
