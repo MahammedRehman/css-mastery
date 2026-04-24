@@ -1,0 +1,163 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: white;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    padding: 0;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 30px auto;   /* center everything */
+    padding: 0 24px; 
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 44px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 24px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.logo{
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    justify-content: center;
+}
+.logo p{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.logo img{
+    height: 32px;
+    width: 36px;
+}
+
+button{
+    padding: 12px 16px;
+}
+
+.nav-cta{
+    color: white;
+    background-color: black;
+    border: 1px solid transparent;
+    border-radius: 32px;
+    font-size: 12px;
+    transition: 0.4s;
+    font-weight: 500;
+}
+
+.nav-cta:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    transition: 0.4s;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.hero{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-top: 44px;
+}
+
+.hero-content{
+    flex: 1;
+    max-width: 600px;
+    padding-top: 16px;
+
+}
+.hero-content .title{
+    font-size: 72px;
+    line-height: 78px;
+    font-weight: 500;
+    word-spacing: 0px;
+}
+
+.hero-content .description{
+    margin-top: 24px;
+    font-size: 18px;
+    color: rgb(159, 159, 159);
+    font-weight: 450;
+}
+.hero-cta{
+    display: flex;
+    gap: 8px;
+    margin-top: 32px;
+}
+.CTA{
+     color: white;
+    background-color: black;
+    border: 2px solid transparent;
+    border-radius: 32px;
+    font-size: 12px;
+    transition: 0.4s;
+    font-weight: 500;
+}
+
+.learn-more{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    transition: 0.4s;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.stats {
+  display: flex;
+  gap: 40px;
+}
+
+.stats h3 {
+  font-size: 24px;
+}
+
+.stats span {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+
+/* .hero-img img{
+    height: 550px;
+    width: 700px;
+} */
+
+
+
+.hero-img img{
+    width: 100%;
+    max-width: 550px;  
+    height: auto;
+    /* box-shadow: 0 20px 40px rgba(0,0,0,0.08); */
+
+}
