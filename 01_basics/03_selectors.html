@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors-101</title>
+</head>
+
+<style>
+    /* Universal Selector -> Apply's for everything on the screen until overriden*/
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Class Seletor */
+    .boxes{
+        border: 5px solid seagreen;
+        padding: 8px;
+    }
+
+    /* Element Selector */
+    img{
+
+        border: 2px solid aqua;
+    }
+
+    /* ID Selector */
+    #id{
+        background-color: aquamarine;
+        border: 2px solid 2px aqua;
+    }
+
+
+    .box:nth-child(2) .text{
+        color: darkslateblue;
+        /* background-color: brown; */
+        padding: 5px;
+        background-color: blue;
+        color: white;
+        /* display: inline-block; */
+    }
+
+
+
+
+
+</style>
+
+<body>
+    <div class="boxes">
+        <div class="box box1">
+            <img src="/Assets/NightSky.avif" alt="night-sky" width="300px">
+        </div>
+        <div class="box box2">
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, pariatur.</p>
+            <button>More</button>
+            <button>Submit</button>
+        </div>
+        <div class="box box3"></div>
+        <div id="text"></div>
+        
+    </div>
+</body>
+</html>
